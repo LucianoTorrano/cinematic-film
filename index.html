@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinematic Film Studio</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="drone-animation.css">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5cd688c4de.js" crossorigin="anonymous"></script>
-    <title>Cinematic Film Studio</title>
+    <script defer src="drone-animation.js"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -111,6 +113,7 @@
             </div>
         </section>
         <section class="services works-bg__ligth" id="services">
+          <img id="drone" src="img/drone.png" alt="Drone">
           <h2 class="services-title">Servicios</h2>
           <ul class="services-list">
             <li class="services-item">
@@ -122,7 +125,7 @@
                  <i class="fas fa-angle-right"></i> Grabación de voces.<br>
               </p>
             </li>
-            <li class="services-item golden-service">
+            <li class="services-item golden-service" id="drone-service">
               <i class="fas fa-record-vinyl title-icon"></i>
               <h3>Mezclas</h3>
               <p>Tu música pasará al siguiente nivel, entre varios, se realizan estos procesos para lograrlo:<br>
