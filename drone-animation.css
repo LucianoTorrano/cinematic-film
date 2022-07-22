@@ -5,6 +5,7 @@
 }
 #drone-service{
     cursor: pointer;
+    transition: all .3s;
 }
 .drone-animation{
     animation: drone__y__1 1020ms 0ms ease-out forwards, drone__opacity__1 1020ms 0ms ease-out forwards, drone__x__1 1020ms 0ms linear forwards, drone__x__2 518ms 1020ms linear forwards, drone__x__3 570ms 1538ms ease-out forwards, drone__rotation__1 1032ms 0ms linear forwards, drone__rotation__2 506ms 1032ms linear forwards;
