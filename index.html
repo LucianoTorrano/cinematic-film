@@ -9,11 +9,13 @@
     <meta name="keywords" content="Productor audiovisual, Prodctor de cine, Piloto de Drone, Propagandas, Videoclips, Publicidades, Tomas aereas, Locución">
     <meta name="author" content="Luciano Torrano">
     <title>Cinematic Film Studio</title>
+    <link rel="icon" href="img/balls-icon.png">
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="drone-animation.css">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5cd688c4de.js" crossorigin="anonymous"></script>
     <script defer src="drone-animation.js"></script>
+    <script defer src="slider.js"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -108,6 +110,60 @@
                     <h2 class="title-right">FILM<br>STUDIOS</h2>
                     <div class="works-div">
                       <h4 class="works-div-title">Trabajos</h4>
+                      <div class="works-slider-container">
+                        <ul class="works-slider">
+                            <li class="slide-container" id="slide1">
+                                <a target="_blank" href="https://www.youtube.com" title="Link a video de Youtube">
+                                    <h4 class="slide-title">Comerciales</h4>
+                                    <img class="slide-img" src="img/slider/comerciales.jpg" alt="Miniatura de Comerciales">
+                                </a>
+                            </li>
+                            <li class="slide-container" id="slide2">
+                                <a target="_blank" href="https://www.youtube.com" title="Link a video de Youtube">
+                                    <h4 class="slide-title">Videoclips</h4>
+                                    <img class="slide-img" src="img/slider/videoclip.jpg" alt="Miniatura de Videoclips">
+                                </a>
+                            </li>
+                            <li class="slide-container" id="slide3">
+                                <a target="_blank" href="https://www.youtube.com" title="Link a video de Youtube">
+                                    <h4 class="slide-title">Tomas Aéreas</h4>
+                                    <img class="slide-img" src="img/slider/aereas.jpg" alt="Miniatura de Tomas Aéreas">
+                                </a>
+                            </li>
+                            <li class="slide-container" id="slide4">
+                                <a target="_blank" href="https://www.youtube.com" title="Link a video de Youtube">
+                                    <h4 class="slide-title">Coberturas de Eventos</h4>
+                                    <img class="slide-img" src="img/slider/eventos.jpg" alt="Miniatura de Eventos">
+                                </a>
+                            </li>
+                            <li class="slide-container" id="slide5">
+                                <a target="_blank" href="https://www.youtube.com" title="Link a video de Youtube">
+                                    <h4 class="slide-title">Reels</h4>
+                                    <img class="slide-img" src="img/slider/deportivo.jpg" alt="Miniatura de Reels">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="works-slider-menu">
+                            <li class="works-slider-selector selected">
+                                <a href="#slide1"><div class="slider-button"></div></a>
+                            </li>
+                            <li class="works-slider-selector">
+                                <a href="#slide2"><div class="slider-button"></div></a>
+                            </li>
+                            <li class="works-slider-selector">
+                                <a href="#slide3"><div class="slider-button"></div></a>
+                            </li>
+                            <li class="works-slider-selector">
+                                <a href="#slide4"><div class="slider-button"></div></a>
+                            </li>
+                            <li class="works-slider-selector">
+                                <a href="#slide5"><div class="slider-button"></div></a>
+                            </li>
+                        </ul>
+                      </div>
+                      <a class="see-more-btn" target="_blank" href="https://www.youtube.com">
+                          <div class="button">Ver más</div>
+                      </a>
                     </div>                    
                     <div class="about-div" id="about">
                       <h4 class="about-div-title">Sobre mí</h4>
@@ -125,47 +181,47 @@
             <li class="services-item">
               <img src="img/servicios-videoclip-icon.svg" alt="Videoclips Icon" class="title-icon">
               <h3>Producción de Videoclips</h3>
-              <p>En conjunto con el sello discográfico <a href="https://www.probermusic.com" id="probermusic-link" title="ProberMusic website" target="_blank">ProberMusic</a>, nos dedicamos a llevar tu pieza sonora a otro límite.</p>
+              <p class="services-item-text">En conjunto con el sello discográfico <a href="https://www.probermusic.com" id="probermusic-link" title="ProberMusic website" target="_blank">ProberMusic</a>, nos dedicamos a llevar tu pieza sonora a otro límite.</p>
             </li>
             <li class="services-item golden-service" id="drone-service">
               <img src="img/drone-icon.svg" class="title-icon" alt="Drone Icon">
               <h3>Aéreas</h3>
-              <p>Con tomas áreas generamos otra perspectiva de lo que podemos demostrar con cámara fija en tierra. En caso de que desees impactar con otro estilo, este es el momento de dar el salto de calidad.<br>
+              <p class="golden-service-text">Con tomas áreas generamos otra perspectiva de lo que podemos demostrar con cámara fija en tierra. En caso de que desees impactar con otro estilo, este es el momento de dar el salto de calidad.<br>
             </li>
             <li class="services-item">
               <img src="img/servicios-publicidad-icon.svg" alt="Publicidad icon" class="title-icon">
               <h3>Publicidad Digital</h3>
-              <p>Videos de hasta 2 minutos de duración, breves pero que contienen todo el contenido posible para poder impactar en redes sociales.</p>
+              <p class="services-item-text">Videos de hasta 2 minutos de duración, breves pero que contienen todo el contenido posible para poder impactar en redes sociales.</p>
             </li>
             <li class="services-item">
               <img src="img/servicios-institucionales-icon.svg" class="title-icon" alt="Institucionales Icon">
               <h3>Institucionales</h3>
-              <p>Tienen de finalidad comunicar e impactar de forma directa en el espectador, mostrando en detalle el funcionamiento de una empresa/comercio.</p>
+              <p class="services-item-text">Tienen de finalidad comunicar e impactar de forma directa en el espectador, mostrando en detalle el funcionamiento de una empresa/comercio.</p>
             </li>
             <li class="services-item">
               <img src="img/servicios-eventos-icon.svg" class="title-icon" alt="Eventos Icon">
               <h3>Eventos</h3>
-              <p>Cubrimos cualquier tipo de evento ya sea social, deportivo, empresarial, entre otros.</p>
+              <p class="services-item-text">Cubrimos cualquier tipo de evento ya sea social, deportivo, empresarial, entre otros.</p>
             </li>
             <li class="services-item">
               <img src="img/servicios-fotoproducto-icon.svg" class="title-icon" alt="Fotoproducto icon">
               <h3>Fotoproducto</h3>
-              <p>Presentamos tu producto dándole la mejor imagen y estética, siempre siendo fiel a sus características originales.</p>
+              <p class="services-item-text">Presentamos tu producto dándole la mejor imagen y estética, siempre siendo fiel a sus características originales.</p>
             </li>
             <li class="services-item">
               <img src="img/servicios-locucion-icon.svg" class="title-icon" alt="Locución icon">
               <h3>Locución</h3>
-              <p>Tienen de finalidad comunicar e impactar de forma directa en el espectador, mostrando en detalle el funcionamiento de una empresa/comercio.</p>
+              <p class="services-item-text">Tienen de finalidad comunicar e impactar de forma directa en el espectador, mostrando en detalle el funcionamiento de una empresa/comercio.</p>
             </li>
             <li class="services-item">
               <img src="img/servicios-edicion-icon.svg" class="title-icon" alt="Edición de Video icon">
               <h3>Edición de Video</h3>
-              <p>Para poder mostrar un excelente material, nos dedicamos al detalle a la hora de editar el contenido. Es muy importante generar contenido para poder crear una pieza audiovisual de excelencia.</p>
+              <p class="services-item-text">Para poder mostrar un excelente material, nos dedicamos al detalle a la hora de editar el contenido. Es muy importante generar contenido para poder crear una pieza audiovisual de excelencia.</p>
             </li>
             <li class="services-item">
               <img src="img/servicios-comerciales-icon.svg" class="title-icon" alt="Comerciales icon">
               <h3>Comerciales</h3>
-              <p>Si interesa dar un salto de calidad con tu producto, no dudes en comunicarte para crear una campaña publicitaria.</p>
+              <p class="services-item-text">Si interesa dar un salto de calidad con tu producto, no dudes en comunicarte para crear una campaña publicitaria.</p>
             </li>
           </ul>
         </section>
