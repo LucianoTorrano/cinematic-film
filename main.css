@@ -647,17 +647,42 @@ input[type=number] { -moz-appearance:textfield; }
 }
 @media screen and (max-width: 900px){
     :root{
-        font-size: 8px;
+        font-size: 9px;
     }
 }
 
 
 /* Small screens */
-@media only screen and (max-width: 680px) {
+@media screen and (max-width: 680px) {
+    :root{
+        font-size: 10px;
+    }
+    p,.about-div-text{
+        font-size: 1.3rem;
+    }
+    .form-container label,.form-button{
+        font-size: 1.5rem;
+    }
     .navbar {
         bottom: 0;
         width: 100%;
         height: 5rem;
+    }
+    .hero-bg-left{
+        padding: 0rem 0rem 10rem 30%;
+    }
+    .hero-img{
+        width: 100%;
+    }
+    .social-media-list{
+        align-items: start;
+        flex-direction: column;
+    }
+    .social-media-list::before{
+        display: none;
+    }
+    .social-media-item{
+        font-size: 1.7rem;
     }
     .logo {
         display: none;
@@ -682,7 +707,9 @@ input[type=number] { -moz-appearance:textfield; }
         display: none;
     }
     .services-title{
+        -webkit-text-stroke: .15rem var(--color-bg-dark);
         padding-top: 12rem;
+        font-size: 5rem;
     }
     .about-img-container{
         grid-row: 2;
@@ -708,10 +735,40 @@ input[type=number] { -moz-appearance:textfield; }
     .works-div,.works-bg{
         min-height: fit-content;
     }
+    .services{
+        padding: 0 0 10rem 0;
+    }
+    .title-icon{
+        height: 5rem;
+    }
+    .services-item{
+        max-width: 30rem;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 0;
+        justify-content: start;
+        padding-left: 0;
+        height: 13rem;
+    }
+    .contact{
+        padding: 5rem 0 20rem 0;
+    }
+    .contact-title{
+        -webkit-text-stroke: .1rem var(--color-bg-light);
+        font-size: 4rem;
+    }
+    #phone-img{
+        left: 50%;
+        transform: translate(-45%);
+    }
+    #spaceship{
+        top: -13rem;
+    }
 }
     
     /* Large screens */
-    @media only screen and (min-width: 680px) {
+    @media screen and (min-width: 680px) {
     .navbar {
         top: 0;
         width: 5rem;
