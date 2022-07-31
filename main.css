@@ -134,7 +134,7 @@ fill: var(--secondary-color);
 /****************************/
 .hero, .works-about,.services{
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     position: relative;
 }
 .hero-img{
@@ -145,8 +145,18 @@ fill: var(--secondary-color);
     transform: translate(-50%,-50%);
     z-index: 1;
 }
-.hero-bg,.works-bg{
-    min-height: 100vh;
+.hero-bg{
+    min-height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2.2fr;
+}
+.works-about{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.works-bg,.about-container{
+    min-height: 50vh;
     width: 100%;
     display: grid;
     grid-template-columns: 3fr 2.2fr;
@@ -155,6 +165,10 @@ fill: var(--secondary-color);
     background-color: var(--color-bg-dark);
     width: 100%;
     min-height: 100vh;
+}
+.works-bg__dark{
+    width: 100%;
+    min-height: 50vh;
 }
 .hero-bg__light,.works-bg__light{
     background-color: var(--color-light-bg);
@@ -356,6 +370,7 @@ fill: var(--secondary-color);
 
 .about-img-container{
     min-height: 50rem;
+    width: 100%;
     position: relative;
 }
 .about-img{
@@ -636,8 +651,9 @@ input[type=number] { -moz-appearance:textfield; }
     }
 }
 
+
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
     .navbar {
         bottom: 0;
         width: 100%;
@@ -655,10 +671,47 @@ input[type=number] { -moz-appearance:textfield; }
     main {
         margin: 0;
     }
+    .works-bg,.about-container{
+        min-height: 50vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
+    .title-left,.title-right{
+        display: none;
+    }
+    .services-title{
+        padding-top: 12rem;
+    }
+    .about-img-container{
+        grid-row: 2;
+        height: fit-content;
+    }
+    .about-div,.works-div{
+        padding: 0;
+        height: fit-content;
+    }
+    #dark-balloon{
+        right: 11rem;
+        top: -10rem;
+    }
+    #light-balloon{
+        left: 3rem;
+    }
+    .works-bg-left{
+        height: fit-content;
+    }
+    .work-together{
+        padding: 6rem 1rem;
+    }
+    .works-div,.works-bg{
+        min-height: fit-content;
+    }
+}
     
     /* Large screens */
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 680px) {
     .navbar {
         top: 0;
         width: 5rem;
