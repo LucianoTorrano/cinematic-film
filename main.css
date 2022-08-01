@@ -698,6 +698,7 @@ input[type=number] { -moz-appearance:textfield; }
     }
     main {
         margin: 0;
+        width: 100vw;
     }
     .works-bg,.about-container{
         min-height: 50vh;
@@ -775,7 +776,21 @@ input[type=number] { -moz-appearance:textfield; }
         font-size: 1.4rem;
     }
 }
-    
+@media screen and (max-width: 470px) {
+    #profile-img{
+        width: 35rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #profile-img{
+        width: 30rem;
+    }
+    #light-balloon,#dark-balloon{
+        width: 15rem;
+    }
+}
+
     /* Large screens */
     @media screen and (min-width: 680px) {
     .navbar {
