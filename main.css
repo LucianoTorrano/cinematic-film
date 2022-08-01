@@ -57,6 +57,7 @@ background-color: var(--bg-primary);
 transition: width 600ms ease;
 overflow: scroll;
 z-index: 5;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .navbar-nav {
@@ -67,6 +68,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 height: 100%;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .nav-item {
@@ -143,11 +145,13 @@ fill: var(--secondary-color);
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 1;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
 }
 .hero-bg{
     min-height: 50vh;
     width: 100%;
     display: grid;
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
     grid-template-columns: 3fr 2.2fr;
 }
 .works-about{
@@ -179,6 +183,9 @@ fill: var(--secondary-color);
     display: flex;
     flex-direction: column;
     justify-content: end;
+}
+.gsap-hero-social-media{
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
 }
 .social-media-list{
     list-style: none;
@@ -583,7 +590,7 @@ textarea:focus, input:focus{
 	color: var(--text-secondary);
 	cursor: pointer;
 }
-.form-button:active{
+.form-button:active,.form-button:focus{
     background-color: var(--primary-color);
     color: var(--text-primary);
 }
