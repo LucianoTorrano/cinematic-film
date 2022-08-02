@@ -57,7 +57,7 @@ background-color: var(--bg-primary);
 transition: width 600ms ease;
 overflow: scroll;
 z-index: 5;
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
 }
 
 .navbar-nav {
@@ -68,7 +68,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 height: 100%;
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
 }
 
 .nav-item {
@@ -141,17 +141,19 @@ fill: var(--secondary-color);
 .hero-img{
     position: absolute;
     width: 80%;
-    top: 45%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 1;
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    opacity: 0;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
 }
 .hero-bg{
     min-height: 50vh;
     width: 100%;
     display: grid;
-    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+    opacity: .5;
+    clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
     grid-template-columns: 3fr 2.2fr;
 }
 .works-about{
@@ -185,7 +187,7 @@ fill: var(--secondary-color);
     justify-content: end;
 }
 .gsap-hero-social-media{
-    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
 }
 .social-media-list{
     list-style: none;
@@ -685,6 +687,45 @@ input[type=number] { -moz-appearance:textfield; }
     }
     .hero-bg{
         grid-template-columns: 3fr 1.8fr;        
+    }
+    .scroll-icon-link{
+        text-decoration: none;
+        position: absolute;
+        right: 50%;
+        bottom: 15%;
+    }
+    .scroll-icon{
+        position: relative;
+        width: 2rem;
+        height: 4rem;
+        border: .3rem solid var(--color-bg-light);
+        border-radius: 2rem;
+        opacity: 0;
+    }
+    .scroll-icon .wheel{
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        width: .6rem;
+        height: .6rem;
+        background-color: var(--color-bg-light);
+        transform: translate(-50%,0);
+        border-radius: .6rem;
+        opacity: 0;
+        animation: scroll-icon-animation 1.4s 4.5s ease-in-out infinite;
+    }
+    @keyframes scroll-icon-animation{
+        0%{
+            transform: translate(-50%,0);
+            opacity: 0;
+        }
+        20%,70%{
+            opacity: 1;
+        }
+        90%,100%{
+            transform: translate(-50%,120%);
+            opacity: .3;
+        }
     }
     .responsive-title-left{
         position: absolute;
