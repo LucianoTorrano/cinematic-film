@@ -476,15 +476,15 @@ fill: var(--secondary-color);
 	text-align: justify;
 	color: var(--text-secondary);
 }
-#probermusic-link{
+#probermusic-link,#lucianotorrano-link{
     text-decoration: none;
     color: var(--primary-color);
 }
-#probermusic-link:hover{
+#probermusic-link:hover,#lucianotorrano-link:hover{
     text-shadow: 0 0 5px var(--color-bg-light);
     transition: .3s;
 }
-#probermusic-link:active{
+#probermusic-link:active,#lucianotorrano-link:active{
     color: var(--secondary-color);
     text-shadow: none;
 }
