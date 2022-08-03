@@ -688,11 +688,15 @@ input[type=number] { -moz-appearance:textfield; }
     .hero-bg{
         grid-template-columns: 3fr 1.8fr;        
     }
+    .gsap-hero-social-media{
+        margin-bottom: 5rem;
+    }
     .scroll-icon-link{
         text-decoration: none;
         position: absolute;
         right: 50%;
-        bottom: 15%;
+        bottom: 20%;
+        margin-bottom: 5rem;
     }
     .scroll-icon{
         position: relative;
@@ -755,6 +759,7 @@ input[type=number] { -moz-appearance:textfield; }
     }
     .hero-img{
         width: 100%;
+        top: 45%;
     }
     .social-media-list{
         align-items: start;
